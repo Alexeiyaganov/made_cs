@@ -1,5 +1,7 @@
 import sys
-
+"""
+    made by rock user
+"""
 
 class Node:
     def __init__(self, key, el, prev, after=None):
