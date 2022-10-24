@@ -2,11 +2,11 @@ import sys
 
 
 class Node:
-    def __init__(self, key, el, prev, after=None):
+    def __init__(self, key, el, prev, later=None):
         self.key = key
         self.el = el
         self.prev = prev
-        self.after = after
+        self.after = later
 
 
 class MyLinkedMap:
