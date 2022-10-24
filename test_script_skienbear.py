@@ -18,15 +18,15 @@ class MyLinkedMap:
         self.current_prev = None
 
     def put(self, key, el):
-        tmp_hash = self.hash(key)
-        for ix, k in enumerate(self.data[tmp_hash]):
+        t_hash = self.hash(key)
+        for ix, k in enumerate(self.data[t_hash]):
             if k.key == key:
                 k.el = el
                 return
-        self.data[tmp_hash].append(Node(key, el, self.current_prev))
+        self.data[t_hash].append(Node(key, el, self.current_prev))
         if not (self.current_prev is None):
-            self.current_prev.after = self.data[tmp_hash][-1]
-        self.current_prev = self.data[tmp_hash][-1]
+            self.current_prev.after = self.data[t_hash][-1]
+        self.current_prev = self.data[t_hash][-1]
 
     def delete(self, key):
         tmp_hash = self.hash(key)
