@@ -1,6 +1,7 @@
 import sys
 """
     this is masters file not by rock
+    and not skienbear
 """
 
 class Node:
