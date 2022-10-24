@@ -1,5 +1,7 @@
 import sys
-
+"""
+    this is masters file
+"""
 
 class Node:
     def __init__(self, key, el, prev, later=None):
