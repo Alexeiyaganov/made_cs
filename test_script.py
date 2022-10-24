@@ -1,6 +1,6 @@
 import sys
 """
-    this is masters file
+    this is masters file not by rock
 """
 
 class Node:
